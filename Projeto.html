@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caio Machado</title>
+    <link rel="stylesheet" href="main.css">
+    <!--Inicio Google Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!--Fim Google Fontes-->
+    <!--Inicio bootstrap Icones-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Fim bootstrap Icones-->
+
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <h1>Caio Machado</h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#biography">Biografia</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#redes-sociais">Redes Sociais</a></li>
+                </ul>
+            </nav>
+            <div class="contat">
+                <a href="#redes-sociais">
+                    <button>Contato</button>
+                </a>
+            </div><!--contat-->
+        </div><!--interface-->
+    </header>
+
+    <main> 
+        <section id="biography" class="biography">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h2>Biografia</h2>
+                        <p>Caio, 30 anos, moro em Ribeirão Preto, casado. Sonho em viajar pelo mundo, explorando novas culturas e aprendendo diferentes idiomas. Acredito que a tecnologia será o meio pelo qual conseguirei transformar esse sonho em realidade, conectando-se com pessoas ao redor do mundo e vivênciando novas experiências.</p>
+                                            <div class="contat">
+                            <a href="#redes-sociais">
+                                <button> Entre em Contato</button>
+                            </a>
+                        </div><!--contat-->
+                    </div><!--txt-topo-site-->
+                        <div class="img-topo-site"> 
+                            <img src="WhatsApp Image 2024-10-14 at 22.20.24.jpeg">
+                        </div><!--img-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--biography-->
+
+        <section id="especialidades" class="especialidades">
+            <div class="interface">
+                <h2 class="titulo">Minhas <span>Especialidades.</span></h2>
+                <div class="flex">
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-filetype-html"></i>
+                        <h3>HTML</h3>
+                        <p>Estou aprendendo sobre HTML e as melhores práticas de desenvolvimento web. Durante meus estudos, estou descobrindo como usar corretamente as tags semânticas para criar estruturas mais acessíveis e organizadas</p>
+                    </div><!--especialidade-box-->
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-filetype-css"></i>
+                        <h3>CSS</h3>
+                        <p>Também estou aplicando conceitos de CSS para estilizar e melhorar a usabilidade das páginas. Além disso, estou focando em tornar o código mais limpo e eficiente, seguindo normas de codificação. A cada nova prática, consigo melhorar a qualidade dos meus projetos.</p>
+                    </div><!--especialidade-box-->
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-filetype-js"></i>
+                        <h3>Javascript</h3>
+                        <p>Estou aprendendo sobre JavaScript e as melhores práticas para escrever código eficiente. Estou me concentrando em entender conceitos fundamentais como variáveis, funções e loops, além de como manipular o DOM. </p>
+                    </div><!--especialidade-box-->
+
+                </div><!--flex-->
+            </div><!--interface-->    
+        </section><!--especialidades-->
+
+        <footer>
+            <form action="/enviar-mensagem" method="POST" class="form-contato">
+                <!-- Campo Nome -->
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+            
+                <!-- Campo Telefone -->
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required><br><br>
+            
+                <!-- Campo Email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+            
+                <!-- Campo Mensagem -->
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+            
+                <!-- Botão de Enviar -->
+                <button type="submit">Enviar</button>
+              </form>
+            <nav aria-label="Redes Sociais para Contatos">
+                <ul id="redes-sociais" class="rodape"><!--rodape-contatos-->
+                    <li>
+                        <a href="https://br.linkedin.com/in/caio-machado-2210b611a" target="_blank" rel="noopener noreferrer" arial-label="Linkedin"><i class="bi bi-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/01001CaioMachado" target="_blank" rel="noopener noreferrer" arial-label="Github"><i class="bi bi-github"></i></a>
+                    </li>
+                </ul><!--rodape-contatos-->
+            </nav>
+        </footer>
+    </main>        
+   
+</body>
+</html>
